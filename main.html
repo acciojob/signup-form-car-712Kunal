@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-
 <html>
 
 <head>
@@ -7,22 +6,26 @@
 </head>
 
 <body>
-	<!-- the entire body must be written by student -->
 	<form action="" method="post">
+
 		<label for="name">Name</label>
 		<input type="text" required id="name" placeholder="Name">
 
 		<label for="email">Email</label>
 		<input type="email" required id="email" placeholder="Email">
 
-		<label for="gender">Gender</label>
-		<input type="radio" required id="gender_m">Male
-		<input type="radio" required id="gender_f">Female
+		<label>Gender</label>
+		<input type="radio" required id="gender_m" name="gender">
+		<label for="gender_m">Male</label>
 
+		<input type="radio" required id="gender_f" name="gender">
+		<label for="gender_f">Female</label>
+
+		<label for="cars">Select Cars</label>
 		<select multiple id="cars">
 			<option>Audi</option>
-			<option>Ferarri</option>
-			<option>Lamborgini</option>
+			<option>Ferrari</option>
+			<option>Lamborghini</option>
 		</select>
 
 		<label for="age">Age</label>
@@ -37,14 +40,14 @@
 		<label for="password">Password</label>
 		<input type="password" required id="password" placeholder="Password">
 
-		
 		<input type="checkbox" required id="tos">
+		<label for="tos">I agree to the TOS</label>
 
-		<button>Submit</button>
+		<button type="submit">Submit</button>
+
 	</form>
-    <script type="text/javascript" src="./script.js">
-</script>
 
+	<script type="text/javascript" src="./script.js"></script>
 </body>
 
 </html>
